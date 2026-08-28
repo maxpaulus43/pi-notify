@@ -1,0 +1,29 @@
+{
+  "name": "pi-notify-ghostty",
+  "version": "0.1.0",
+  "description": "macOS notifications for Pi running in Ghostty",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "ghostty",
+    "notifications"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "test": "pi -e . --list-models > /dev/null"
+  },
+  "files": [
+    "extensions",
+    "README.md",
+    "LICENSE"
+  ],
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "pi": {
+    "extensions": [
+      "./extensions/notify.ts"
+    ]
+  }
+}
